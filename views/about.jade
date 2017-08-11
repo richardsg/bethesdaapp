@@ -1,0 +1,485 @@
+extends layout
+
+block content
+  .header
+    .w3layouts_header_right
+      .agileits-social.top_content
+        ul
+          li
+            a(href='https://www.facebook.com/suresh.ignatius')
+              i.fa.fa-facebook
+          li
+            a(href='#')
+              i.fa.fa-twitter
+          li
+            a(href='#')
+              i.fa.fa-rss
+          li
+            a(href='#')
+              i.fa.fa-vk
+          li
+            a(href='https://www.youtube.com/channel/UCbFjvT3TbVdrw8AijKlXbdQ/videos')
+              i.fa.fa-youtube
+    .w3layouts_header_left
+      ul
+        li
+          a(href='#', data-toggle='modal', data-target='#myModal2')
+            i.fa.fa-user(aria-hidden='true')
+            |  Sign in
+        li
+          a(href='#', data-toggle='modal', data-target='#myModal3')
+            i.fa.fa-pencil-square-o(aria-hidden='true')
+            |  Sign up
+    .clearfix
+  .header_mid
+    .w3layouts_header_mid
+      ul
+        li
+          .header_contact_details_agile
+            i.fa.fa-envelope-o(aria-hidden='true')
+            .w3l_header_contact_details_agile
+              .header-contact-detail-title Send us a Mail
+              a(href='mailto:bethesdahealingministry17@gmail.com') bethesdahealingministry17
+        li
+          .header_contact_details_agile
+            i.fa.fa-phone(aria-hidden='true')
+            .w3l_header_contact_details_agile
+              .header-contact-detail-title Give us a Call
+              a.w3l_header_contact_details_agile-info_inner  +91-98442 65867
+        li
+          .header_contact_details_agile
+            i.fa.fa-clock-o(aria-hidden='true')
+            .w3l_header_contact_details_agile
+              .header-contact-detail-title Prayer Requests
+              a.w3l_header_contact_details_agile-info_inner Mon - Sat: 7:00 - 18:00
+        li
+          .header_contact_details_agile
+            i.fa.fa-map-marker(aria-hidden='true')
+            .w3l_header_contact_details_agile
+              .header-contact-detail-title #777 Bellary Fort
+              a.w3l_header_contact_details_agile-info_inner Karnataka- 583 104
+  .banner
+    nav.navbar.navbar-default
+      .navbar-header.navbar-left
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        h1
+          a.navbar-brand(href='/')
+      // Collect the nav links, forms, and other content for toggling
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse.navbar-right
+            nav#link-effect-2.link-effect-2
+              ul.nav.navbar-nav
+                li
+                    a(href='/')
+                        span(data-hover='Home') Home
+                li.active
+                    a(href='about')
+                        span(data-hover='About Us') About Us
+                li
+                    a(href='events')
+                        span(data-hover='Events') Events
+                li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown')
+                        span(data-hover='Bethesda') Ministries
+                        b.caret
+                    ul.dropdown-menu.agile_short_dropdown
+                        li
+                            a(href='gallery') Gallery
+                        li
+                            a(href='orphans') Orphans
+                        li
+                            a(href='widows') Widows
+                li
+                    a(href='mail')
+                        span(data-hover='Mail Us') Mail Us
+      .w3_agile_search
+        form(action='#', method='post')
+          input(type='search', name='Search', placeholder='Search Keywords...', required='')
+          input(type='submit', value='Search')
+  // //banner
+  // /banner
+  .banner1
+    .wthree_banner1_info
+      h3    About
+        span.lightgreen
+            | Bethesda Healing Ministries
+      h4.author
+        span.author Evangelist
+        | Suresh Ignatius
+  // //banner
+  // courses
+  .team
+    .container
+      .w3_agile_team_grid
+        .w3_agile_team_grid_left
+          h3.w3l_header.w3_agileits_header
+            | Evangelist
+            span.green Suresh Ignatius
+          p.sub_para_agile We are preaching about Crusified Christ
+      .agile_team_grids_top
+        .col-md-6.w3ls_banner_bottom_left.w3ls_courses_left
+          .w3ls_courses_left_grids
+            .w3ls_courses_left_grid
+              h3
+                i.fa.fa-pencil-square-o(aria-hidden='true')
+                | Greetings to you in the name of Lord Jesus Christ
+              p
+                | But He was wounded for our transgressions; He was bruised for our iniquities. The chastisement of our peace was upon Him, and with His stripes we are healed.
+            .w3ls_courses_left_grid
+              h3
+                i.fa.fa-pencil-square-o(aria-hidden='true')
+                | మనమందరము గొఱ్ఱెలవలె త్రోవ తప్పిపోతివిు.
+              p
+                | అతడు దౌర్జన్యము నొందెను బాధింపబడినను అతడు నోరు తెరవలేదు వధకు తేబడు గొఱ్ఱపిల్లయు బొచ్చు కత్తిరించువానియెదుట గొఱ్ఱయు మౌనముగా నుండునట్లు అతడు నోరు తెరువలేదు.
+                | He was oppressed, and He was afflicted, yet He opened not his mouth; He is brought as a lamb to the slaughter; and as a sheep before her shearers is dumb, so He openeth not His mouth.
+            .w3ls_courses_left_grid
+              h3
+                i.fa.fa-pencil-square-o(aria-hidden='true')
+                | He made His grave with the wicked, and with the rich in His death,
+              p
+                | అతడు మరణమైనప్పుడు భక్తిహీనులతో అతనికి సమాధి నియమింపబడెను ధనవంతునియొద్ద అతడు ఉంచబడెను నిశ్చయముగా అతడు అన్యాయమేమియు చేయలేదు అతని నోట ఏ కపటమును లేదు.
+                | And He made His grave with the wicked, and with the rich in His death, because He had done no violence, neither was any deceit in His mouth.
+        .col-md-6.agileits_courses_right
+          img.img-responsive(src='images/2.jpg', alt=' ')
+        .clearfix
+  // //courses
+  // stats
+  .stats
+    .col-md-3.w3layouts_stats_left.w3_counter_grid
+      p.counter 1,5464
+      h3 Attend in Meetings
+    .col-md-3.w3layouts_stats_left.w3_counter_grid1
+      p.counter 3,545
+      h3 Accepted Jesus as Their Savior
+    .col-md-3.w3layouts_stats_left.w3_counter_grid2
+      p.counter 563
+      h3 Bethesda Healing Ministries
+    .col-md-3.w3layouts_stats_left.w3_counter_grid3
+      p.counter 3,000
+      h3 Target Goal next
+    .clearfix
+  // //stats
+  // bootstrap-pop-up
+  #myModal.modal.video-modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModal')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          | Healing
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        section
+          .modal-body
+            img.img-responsive(src='images/10.jpg', alt=' ')
+            p
+              | The one who believes in the Son of God has this testimony within him.
+              | The one who does not believe God has made Him a liar, because he has not believed
+              | in the testimony God has given about His Son.
+              i
+                | " Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                | esse quam nihil molestiae consequatur.
+  // //bootstrap-pop-up
+  // stats-bottom
+  .team
+    .container
+      .w3_agile_team_grid
+        .w3_agile_team_grid_left
+          h3.w3l_header.w3_agileits_header
+            | Our
+            span.green Ministries
+          p.sub_para_agile John 5:11 This is the testimony.
+      .agile_team_grids_top
+        .col-md-6.w3l_stats_bottom_grid_right
+          .bar_group
+            .bar_group__bar.thin.elastic(label='Crusade Ministries', value='330')
+              .w3ls_bar_group__bar_pos
+                p 92%
+            .bar_group__bar.thin.elastic(label='Healing Ministries', value='350')
+              .w3ls_bar_group__bar_pos
+                p 100%
+            .bar_group__bar.thin.elastic(label='Orphan Ministries', value='320')
+              .w3ls_bar_group__bar_pos
+                p 89%
+            .bar_group__bar.thin.elastic(label='Children Ministries', value='340')
+              .w3ls_bar_group__bar_pos
+                p 100%
+        .col-md-6.w3l_stats_bottom_grid_left
+          img.img-responsive(src='images/3.jpg', alt=' ')
+        .clearfix
+  // //stats-bottom
+  // stats-bottom-banner
+  .stats-bottom-banner
+    .container
+      h3
+        | Bethesda
+        span.green Healing Ministries,
+        | Bellary
+      p
+        | Psalm 71:15-16 I will declare your righteousness and your salvation every day, though I do not fully understand
+        | what the outcome will be.  Lord God, I will come in the power of your mighty acts, remembering your righteousness—yours alone.
+  // //stats-bottom-banner
+  // bootstrap-pop-up
+  #myModal.modal.video-modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModal')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .signin-form.profile
+          .modal-body
+            img.img-responsive(src='images/g1.jpg', alt=' ')
+            p
+              | Ut enim ad minima veniam, quis nostrum
+              | exercitationem ullam corporis suscipit laboriosam,
+              | nisi ut aliquid ex ea commodi consequatur? Quis autem
+              | vel eum iure reprehenderit qui in ea voluptate velit
+              | esse quam nihil molestiae consequatur, vel illum qui
+              | dolorem eum fugiat quo voluptas nulla pariatur.
+              i
+                | " Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                | esse quam nihil molestiae consequatur.
+  // //bootstrap-pop-up
+  // testimonials
+  .testimonials
+    .container
+      h3.w3l_header.w3_agileits_header
+        | Our -
+        span Believers
+      p.sub_para_agile Ipsum dolor sit amet consectetur adipisicing elit
+      .w3ls_testimonials_grids
+        section.center.slider
+          .agileits_testimonial_grid
+            .w3l_testimonial_grid
+              p
+                | i was Healed while Pastor praying in the name of Jesus.
+                | Amen!
+              h4 Rosy Crisp
+              h5 Believer
+              .w3l_testimonial_grid_pos
+                img.img-responsive(src='images/6.png', alt=' ')
+          .agileits_testimonial_grid
+            .w3l_testimonial_grid
+              p
+                | i was Healed while Pastor praying in the name of Jesus.
+                | Amen!
+              h4 Laura Paul
+              h5 Believer
+              .w3l_testimonial_grid_pos
+                img.img-responsive(src='images/2.png', alt=' ')
+          .agileits_testimonial_grid
+            .w3l_testimonial_grid
+              p
+                | i was Healed while Pastor praying in the name of Jesus.
+                | Amen!
+              h4 Michael Doe
+              h5 Believer
+              .w3l_testimonial_grid_pos
+                img.img-responsive(src='images/3.png', alt=' ')
+          .agileits_testimonial_grid
+            .w3l_testimonial_grid
+              p
+                | i was Healed while Pastor praying in the name of Jesus.
+                | Amen!
+              h4 Michael Doe
+              h5 Believer
+              .w3l_testimonial_grid_pos
+                img.img-responsive(src='images/4.png', alt=' ')
+          .agileits_testimonial_grid
+            .w3l_testimonial_grid
+              p
+                | i was Healed while Pastor praying in the name of Jesus.
+                | Amen!
+              h4 Michael Doe
+              h5 Believer
+              .w3l_testimonial_grid_pos
+                img.img-responsive(src='images/5.png', alt=' ')
+  // //testimonials
+  // footer
+  .footer_agile_w3ls
+    .container
+      .agileits_w3layouts_footer_grids
+        .col-md-3.footer-w3-agileits
+          h3 Future Programs
+          ul
+            li Crusade Ministry
+            li Overseas Ministry
+            li Orphans Ministry
+            li Lorem Ipsum
+        .col-md-3.footer-agileits
+          h3 Latest Information
+          ul
+            li Songs Book
+            li Latest worship
+            li Shalom
+            li King of Kings
+        .col-md-3.footer-wthree
+          h3 Ministry Partners
+          ul
+            li New Life Born in Christ
+            li Change you Life
+            li Church Planting
+            li Latest Videos
+        .col-md-3.footer-agileits-w3layouts
+          h3 Our Links
+          ul
+            li
+              a(href='/') Home
+            li
+              a(href='about') About
+            li
+              a(href='events') Events
+            li
+              a(href='mail') Contact
+        .clearfix
+      .agileits_w3layouts_logo.logo2
+        h2
+          a(href='/') Bethesda Healing Ministries
+        .agileits-social
+          ul
+            li
+              a(href='https://www.facebook.com/suresh.ignatius')
+                i.fa.fa-facebook
+            li
+              a(href='#')
+                i.fa.fa-twitter
+            li
+              a(href='#')
+                i.fa.fa-rss
+            li
+              a(href='#')
+                i.fa.fa-vk
+            li
+              a(href='https://www.youtube.com/channel/UCbFjvT3TbVdrw8AijKlXbdQ/videos')
+                i.fa.fa-youtube
+  .wthree_copy_right
+    .container
+      p
+        | © 2017 Bethesda Healing Ministries. All rights reserved | Design by
+        a(href='http://fb.com/richards.gamidi/')
+          | Richards
+  // //footer
+  #myModal2.modal.fade(tabindex='-1', role='dialog')
+    .modal-dialog
+      // Modal content
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal') ×
+          .signin-form.profile
+            h3.agileinfo_sign Sign In
+            .login-form
+              form(action='#', method='post')
+                input(type='email', name='email', placeholder='E-mail', required='')
+                input(type='password', name='password', placeholder='Password', required='')
+                .tp
+                  input(type='submit', value='Sign In')
+            .login-social-grids
+              ul
+                li
+                  a(href='https://www.facebook.com/suresh.ignatius')
+                    i.fa.fa-facebook
+                li
+                  a(href='#')
+                    i.fa.fa-twitter
+                li
+                  a(href='#')
+                    i.fa.fa-rss
+                li
+                  a(href='#')
+                    i.fa.fa-vk
+                li
+                  a(href='https://www.youtube.com/channel/UCbFjvT3TbVdrw8AijKlXbdQ/videos')
+                    i.fa.fa-youtube
+            p
+              a(href='#', data-toggle='modal', data-target='#myModal3')  Don't have an account?
+  // //Modal1
+  // Modal2
+  #myModal3.modal.fade(tabindex='-1', role='dialog')
+    .modal-dialog
+      // Modal content
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal') ×
+          .signin-form.profile
+            h3.agileinfo_sign Sign Up
+            .login-form
+              form(action='#', method='post')
+                input(type='text', name='name', placeholder='Username', required='')
+                input(type='email', name='email', placeholder='Email', required='')
+                input(type='password', name='password', placeholder='Password', required='')
+                input(type='password', name='password', placeholder='Confirm Password', required='')
+                input(type='submit', value='Sign Up')
+            p
+              a(href='#')  By clicking register, I agree to your terms
+  // //Modal2
+  // //bootstrap-pop-up
+  // js
+  script(type='text/javascript', src='js/jquery-2.1.4.min.js')
+  // //js
+  script(src='js/bars.js')
+  // stats
+  script(src='js/jquery.waypoints.min.js')
+  script(src='js/jquery.countup.js')
+  script.
+      $('.counter').countUp();
+  // //stats
+  // carousal
+  script(src='js/slick.js', type='text/javascript', charset='utf-8')
+  script(type='text/javascript').
+      $(document).on('ready', function () {
+          $(".center").slick({
+              dots: true,
+              infinite: true,
+              centerMode: true,
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              responsive: [
+                  {
+                      breakpoint: 768,
+                      settings: {
+                          arrows: true,
+                          centerMode: false,
+                          slidesToShow: 2
+                      }
+                  },
+                  {
+                      breakpoint: 480,
+                      settings: {
+                          arrows: true,
+                          centerMode: false,
+                          centerPadding: '40px',
+                          slidesToShow: 1
+                      }
+                  }
+              ]
+          });
+      });
+  // //carousal
+  // start-smooth-scrolling
+  script(type='text/javascript', src='js/move-top.js')
+  script(type='text/javascript', src='js/easing.js')
+  script(type='text/javascript').
+      jQuery(document).ready(function ($) {
+          $(".scroll").click(function (event) {
+              event.preventDefault();
+              $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+          });
+      });
+  // start-smooth-scrolling
+  // for bootstrap working
+  script(src='js/bootstrap.js')
+  // //for bootstrap working
+  // here stars scrolling icon
+  script(type='text/javascript').
+      $(document).ready(function () {
+        /*
+         var defaults = {
+         containerID: 'toTop', // fading element id
+         containerHoverID: 'toTopHover', // fading element hover id
+         scrollSpeed: 1200,
+         easingType: 'linear'
+         };
+         */
+          $().UItoTop({easingType: 'easeOutQuart'});
+      });

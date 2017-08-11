@@ -1,0 +1,161 @@
+doctype html
+//
+  author: W3layouts
+  author URL: http://w3layouts.com
+  License: Creative Commons Attribution 3.0 Unported
+  License URL: http://creativecommons.org/licenses/by/3.0/
+html(lang='en')
+  head
+    title
+      | Bethesda Healing Ministries | Bellary | Evangelist Suresh | Bethesda Church
+    // custom-theme
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='Bethesda Healing Ministires, Bellary, Director Evengelist Suresh Ignetus , Chrisitan Organization in Bellary')
+    script(type='application/x-javascript').
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); }
+    // //custom-theme
+    link(rel='stylesheet', href='css/bootstrap.css',  type='text/css', media='all')
+    link(rel='stylesheet', href='css/style.css',  type='text/css', media='all')
+    link(rel='stylesheet', href='css/mainStyles.css')
+    link(rel='stylesheet', href='css/dscountdown.css', type='text/css', media='all')
+    link(rel='stylesheet', href='css/flexslider.css', type='text/css', media='screen', property='')
+    // gallery
+    link(rel='stylesheet', href='css/lsb.css',  type='text/css')
+    // //gallery
+    // font-awesome-icons
+    link(rel='stylesheet', href='css/font-awesome.css')
+    link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,900')
+    // Insert to your webpage before the </head>
+    script(src='sliderengine/jquery.js')
+    script(src='sliderengine/amazingslider.js')
+    link(rel='stylesheet', type='text/css', href='sliderengine/amazingslider-1.css')
+    script(src='sliderengine/initslider-1.js')
+    // End of head section HTML codes
+  body
+    block content
+// //bootstrap-pop-up
+// js
+// //js
+// Counter required files
+script(type='text/javascript', src='js/dscountdown.min.js')
+script(src='js/demo-1.js')
+script.
+    jQuery(document).ready(function($){
+        $('.demo2').dsCountDown({
+            endDate: new Date("December 24, 2017 23:59:00"),
+            theme: 'black'
+        });
+    });
+// //Counter required files
+script(src='js/mainScript.js')
+script(src='js/rgbSlide.min.js')
+// carousal
+script(src='js/slick.js', type='text/javascript', charset='utf-8')
+script(type='text/javascript').
+    $(document).on('ready', function() {
+        $(".center").slick({
+            dots: true,
+            infinite: true,
+            centerMode: true,
+            slidesToShow:2,
+            slidesToScroll:2,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: true,
+                        centerMode: false,
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: true,
+                        centerMode: false,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+// //carousal
+// flexisel
+script(type='text/javascript').
+    $(window).load(function() {
+        $("#flexiselDemo1").flexisel({
+            visibleItems: 4,
+            animationSpeed: 1000,
+            autoPlay: true,
+            autoPlaySpeed: 3000,
+            pauseOnHover: true,
+            enableResponsiveBreakpoints: true,
+            responsiveBreakpoints: {
+                portrait: {
+                    changePoint:480,
+                    visibleItems: 1
+                },
+                landscape: {
+                    changePoint:640,
+                    visibleItems:2
+                },
+                tablet: {
+                    changePoint:768,
+                    visibleItems: 2
+                }
+            }
+        });
+    });
+script(type='text/javascript', src='js/jquery.flexisel.js')
+// //flexisel
+// gallery-pop-up
+script(src='js/lsb.min.js')
+script.
+    $(window).load(function() {
+        $.fn.lightspeedBox();
+    });
+// //gallery-pop-up
+// flexSlider
+script(defer='', src='js/jquery.flexslider.js')
+script(type='text/javascript').
+    $(window).load(function(){
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function(slider){
+                $('body').removeClass('loading');
+            }
+        });
+    });
+// //flexSlider
+// start-smooth-scrolling
+script(type='text/javascript', src='js/move-top.js')
+script(type='text/javascript', src='js/easing.js')
+script(type='text/javascript').
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+// start-smooth-scrolling
+// for bootstrap working
+script(src='js/bootstrap.js')
+// //for bootstrap working
+// here stars scrolling icon
+script(type='text/javascript').
+    $(document).ready(function() {
+        /*
+         var defaults = {
+         containerID: 'toTop', // fading element id
+         containerHoverID: 'toTopHover', // fading element hover id
+         scrollSpeed: 1200,
+         easingType: 'linear'
+         };
+         */
+        $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+// //here ends scrolling icon
+
